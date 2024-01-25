@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (5 pts)
+# DONE: 1. (5 pts)
 #   Immediately below this _TODO_, write code that:
 #     - Asks the user what their name is
 #     - Waits for the user to input their name and hit enter
@@ -28,13 +28,16 @@
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
 
+name = input("What is your name? ")
+print(f"Most distinguished {name}, I am elated to find you in my company today.")
+
 ###############################################################################
-# TODO: 2. (5 pt)
+# DONE: 2. (5 pt)
 #   Now you might be thinking, why didn't we just use concatenation to do this?
 #   Isn't it just the same thing?
 #
 #   Well, what if we have a number (of type int) that we want to include in a
-#   string? If copy the line of code below and paste it under this todo and run
+#   string? If we copy the line of code below and paste it under this todo and run
 #   your code, what happens when it runs this line (which should be after your
 #   code from the first todo runs)?
 #
@@ -72,3 +75,7 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+
+number = input(f"{name}, if I may dare ask, what is your favorite number? ")
+int(number)
+print(f"Splendid, {name}! {number} is a great number, indeed!")
